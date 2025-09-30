@@ -9,7 +9,7 @@ public class Lab19A {
 			SessionFactory sf=HibernateUtil.getSessionFactory();
 			Session session=sf.openSession();
 			tx=session.beginTransaction();
-			Customer cust=new Customer("Nisha","payal@gmail",11111);
+			Customer cust=new Customer("Aditya","payal@gmail",11111);
 			session.save(cust);
 			tx.commit();
 			session.close();			
